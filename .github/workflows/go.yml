@@ -1,8 +1,9 @@
 name: Go
 
 on:
+  push:
   schedule:
-    - cron: '2 * * * *'
+    - cron: '1 * * * *'
 
 jobs:
 
@@ -23,4 +24,5 @@ jobs:
     - name: Get dependencies
       run: |
         echo "hello jetman"
+        curl wttr.in
 
